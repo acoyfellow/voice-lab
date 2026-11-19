@@ -1,0 +1,15 @@
+{
+  "name": "voice-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && npx serve docs",
+    "deploy": "node build.mjs && wrangler deploy"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "svelte": "5.57.3",
+    "wrangler": "^4.0.0"
+  }
+}
